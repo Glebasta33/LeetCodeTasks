@@ -1,7 +1,15 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import task.RansomNoteSolution333
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    listOf(
+//        "ab" to "aa",
+//        "bb" to "bba",
+        "bb" to "bbab",
+//        "ccd" to "c"
+    ).forEach {
+        RansomNoteSolution333().canConstruct(it.first, it.second).also { result ->
+            println("${it.first} - ${it.second} = $result")
+        }
+    }
+
 }
