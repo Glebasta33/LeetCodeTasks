@@ -1,8 +1,15 @@
-import task.FizzBuzz412
-import task.RansomNoteSolution333
+import task.maximumWealth
 
 fun main() {
 
-    FizzBuzz412().fizzBuzz(15).let { println(it) }
+    val input = arrayOf(
+        intArrayOf(1, 2, 3),
+        intArrayOf(5, 2, 3),
+        intArrayOf(1, 2, 4),
+    )
+
+    maximumWealth(input).apply {
+        println(this)
+    }
 
 }
